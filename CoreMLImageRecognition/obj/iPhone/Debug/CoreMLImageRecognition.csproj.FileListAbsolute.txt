@@ -1,0 +1,12 @@
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\bin\iPhone\Debug\CoreMLImageRecognition.exe
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\bin\iPhone\Debug\CoreMLImageRecognition.pdb
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\device-builds\iphone7.2-12.0\ibtool\_BundleResourceWithLogicalName.items
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\device-builds\iphone7.2-12.0\actool\_PartialAppManifest.items
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\device-builds\iphone7.2-12.0\actool\_BundleResourceWithLogicalName.items
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\device-builds\iphone7.2-12.0\coremlc\_PartialAppManifest.items
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\device-builds\iphone7.2-12.0\coremlc\_BundleResourceWithLogicalName.items
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\device-builds\iphone7.2-12.0\optimized\
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\CoreMLImageRecognition.csprojAssemblyReference.cache
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\CoreMLImageRecognition.csproj.CoreCompileInputs.cache
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\CoreMLImageRecognition.exe
+D:\Development_Dotnet\ios-samples-master\ios11\CoreMLImageRecognition\CoreMLImageRecognition\obj\iPhone\Debug\CoreMLImageRecognition.pdb
