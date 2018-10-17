@@ -157,7 +157,6 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="LICENSE.txt" />
-    <None Include="README.md" />
     <BundleResource Include="Resources\VGG16.mlmodelc\coremldata.bin" />
     <BundleResource Include="Resources\VGG16.mlmodelc\model.espresso.net" />
     <BundleResource Include="Resources\VGG16.mlmodelc\model.espresso.shape" />
