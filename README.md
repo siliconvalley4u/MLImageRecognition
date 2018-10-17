@@ -1,10 +1,10 @@
-# Import a CoreML Model and Classify Images Using Different Models
+# Import a Machine Learning Model (Core ML) and Classify Images Using Different Models for iOS app
 
-## Using a CoreML Model in Xamarin
+## Using a Core ML
 
 Modern machine-learning generally relies on very large multi-dimensional arrays, arranged in complex graphs. These 
-models are the result of their own development process. CoreML does not have APIs for developing or training models, 
-only for consuming them. 
+models are the result of their own development process. Core ML (https://developer.apple.com/documentation/coreml) 
+does not have APIs for developing or training models, only for consuming them. 
 
 Apple has defined a file format, .mlmodel, that stores the technique description and metadata, the graph structure, and 
 the values in a single file. To use that model in a program, it must be compiled with a special tool and the 
@@ -14,24 +14,23 @@ Models can vary greatly in size. This app demonstrates two models, both intended
 that trade off size for accuracy. One model, SqueezeNet, is approximately 5MB. The other, VGG16, is 550MB. In this app 
 you can use either model to classify either stored photos or camera images. 
 
-VGG16 is _not_ included in the Github repository, so you _must_ follow the instructions in this file to download and 
+VGG16 is _not_ included in this Github repository, so you _must_ follow the instructions in this file to download and 
 compile it for use in the app.
 
-## Downloading and compiling a machine learning model
+## Downloading and compiling a Core ML
 
 This application uses two image-classification models: SqueezeNet and VGG16. The compiled SqueezeNet model is already 
-included in the Github directory. VGG16 must be downloaded from [https://docs-assets.developer.apple.com/coreml/models/VGG16.mlmodel](https://docs-assets.developer.apple.com/coreml/models/VGG16.mlmodel), compiled, and included in the project before 
-you can use it.
+included in the Github directory. VGG16 must be downloaded, compiled, and included in the project before you can use it.
 
-To download the 550MB VGG16, either save it from the file above or, from a terminal, run:
+To download the 550MB VGG16, from a terminal, run:
 
     wget https://docs-assets.developer.apple.com/coreml/models/VGG16.mlmodel
 
-The CoreML compiler is included with the Xcode developer tools   (Xcode 9 and higher). To compile an .mlmodel, run:
+The Core ML compiler is included with the Xcode developer tools   (Xcode 9 and higher). To compile an .mlmodel, run:
 
     xcrun coremlcompiler compile {model.mlmodel} {outputFolder}
 
-The `outputFolder` should be the Resources folder of your Xamarin iOS solution. The output of the CoreML compiler is a 
+The `outputFolder` should be the Resources folder of your iOS solution. The output of the Core ML compiler is a 
 folder with a .mlmodelc extension. The contents will vary depending on the type of machine-learning algorithm used. 
 
 Once you’ve compiled the model, you must include it in your solution. Open the sample application and in the Solution 
@@ -39,14 +38,14 @@ Pad, right-click on the Resources folder. Select “Add an existing folder…”
 
 ![Resources directory in Solution Pad](docs/figure1.png)
 
-And select the output folder from the CoreML compiler. Choose “Include All” and “OK” to add the files to your solution. 
+And select the output folder from the Machine Learning compiler. Choose “Include All” and “OK” to add the files to your solution. 
 Once you have done so, the Resources folder for the sample app should look like:
 
 ![Resources once VGG16 added](docs/figure2.png)
 
-## Loading a Core ML model in your app
+## Loading a Machine Learning model in your app
 
-The function to load a Core ML model is [MLModel.FromUrl](https://developer.xamarin.com/api/member/CoreML.MLModel.FromUrl/p/Foundation.NSUrl/Foundation.NSError@/), so it _is_ possible to load a smaller model from the Web, but generally
+The function to load a Core ML is [MLModel.FromUrl](https://developer.xamarin.com/api/member/CoreML.MLModel.FromUrl/p/Foundation.NSUrl/Foundation.NSError@/), so it _is_ possible to load a smaller model from the Web, but generally
  you will load it with code similar to:
 
 	MLModel LoadModel(string modelName)  
@@ -63,9 +62,9 @@ The function to load a Core ML model is [MLModel.FromUrl](https://developer.xama
 	}  
 
 
-# Classifying Images Core ML
+# Classifying Images Using Core ML
 
-The sample app uses the two different image-classification models to attempt to identify the contents of an image, 
+This sample app uses the two different image-classification models to attempt to identify the contents of an image, 
 either from the Photos store or taken with the camera. The VGG16 model generally produces better results, but at a cost 
 of 2 orders of magnitude in the size of the model! 
 
@@ -77,4 +76,4 @@ the model’s accuracy estimate:
 
 ## Getting Started
 
-Core ML require macOS 10.13, iOS 11, or tvOS 11. This example project runs only in iOS 11.
+The Core ML require macOS 10.13, iOS 11, or tvOS 11. This example project runs only in iOS 11.
