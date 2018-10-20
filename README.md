@@ -76,7 +76,7 @@ the model’s accuracy estimate:
 
 ## Getting Started
 
-This example project runs only in iOS 11.
+This example project runs only in iOS 11 or above.
 
 
 ## Deploy This C# Sample Project To iOS
